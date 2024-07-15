@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image:url(car.jpg) ;
+    background-position:no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+    padding-left: 15px;
+    overflow: hidden;
+   
+}
+
+nav{
+    width: 99%;
+    height:55px ;
+    background-color: rgba(149, 146, 146, 0.4);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+nav h1{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+nav h1 span{
+    color:#B98434;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav ul li{
+    list-style: none;
+    
+    
+}
+
+nav ul li button{
+    width: 100px;
+    height: 35px;
+    border: none;
+    outline: none;
+    color: #B98434;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #B98434 ;
+
+}
+
+ #bars,#xmark{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    font-size: 2rem;
+    color: #B98434;
+    transform: translateX(100px);
+}
+
+
+nav ul li button:hover{
+    box-shadow: 2px 2px 20px #B98434;
+}
+
+.menue{
+    width: 250px;
+    height: 450px;
+    background-color: rgba(20, 20, 20,0.9);
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(500px);
+}
+
+.menue button{
+    width: 140px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid #af741b;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-weight: bolder;
+
+}
+
+
+
+@media screen and (max-width:1221px ) {
+    nav ul li{
+        display: none;
+    }
+    #bars{
+       transform: translateX(0px);
+    }
+
+   
+}
+
+@media screen and (max-width:478px) {
+    .menue{
+       width:300px ;
+    }
+    nav h1{
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+}
